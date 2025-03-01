@@ -4,7 +4,7 @@ on:
   schedule:
     # 使用cron表达式定义任务运行的时间
     # github使用utc时间
-    - cron: '3 22 * * *' #北京时间6点
+    - cron: '0 */1 * * *' # 每1小时执行一次（私库每月500分钟运行时长，每天16分钟）
   workflow_dispatch:
 
 jobs:
